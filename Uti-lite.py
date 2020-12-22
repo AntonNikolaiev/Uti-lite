@@ -110,8 +110,11 @@ def main():
     print('Неверная команда.')
     main()
 
-clear = 'clear'
-os.system(clear)
+def clear():
+  if os.sys.platform == "win32":
+    os.system("cls")
+  else:
+    os.system("clear")
 print("""  _   _ _   _       _ _ _        """)
 print(""" | | | | |_(_)     | (_) |_ ___  """)
 print(""" | | | | __| |_____| | | __/ _ \ """)
